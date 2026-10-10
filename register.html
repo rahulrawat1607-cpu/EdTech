@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+</head>
+<body>
+   <header>
+     <a href="index.html" target="_blank">
+        <img src="..\Multimedia\new_cn_logo.svg"
+        alt="codingninjaslogo" title="Logo" />
+        </a>
+    </header>
+    <h2>
+        Create an Account
+    </h2>
+    <br />
+    <section id="register-form">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <br />
+                <label for="fullname">Full Name: </label>
+                <input id="fullname" type="text" name="fullname" required>
+                <br />
+                <br />
+                <label for="email">Email: </label>
+                <input id="email" name="email" type="email" required>
+                <br />
+                <br />
+                <label for="username">Username: </label>
+                <input id="username" name="username" type="text" required>
+                <br />
+                <br />
+                <label for="password">Password: </label>
+                <input id="password" name="password" type="password" required>
+                <br />
+                <br />
+                <label for="user-type">User Type: </label>
+                <select id="user-type" name="user-type">
+                    <option value=" " selected disabled>&nbsp;</option>
+                    <option value="instructor">Instructor</option>
+                    <option value="student">Student</option>
+                </select>
+                <br />
+                <br />
+                <label for="select-course">Select Course:</label>
+                <br />
+                <article id="select-course">
+                <input type="radio" name="course" id="course1" value="course1">
+                <label for="course1">Course 1 - Web Development</label>
+                <input type="radio" name="course" id="course2" value="course2">
+                <label for="course2">Course 2 - Data Science Fundamentals</label>
+                <input type="radio" name="course" id="course3" value="course3">
+                <label for="course3">Course 3 - Digital Marketing Mastery</label>
+                <input type="radio" name="course" id="course4" value="course4">
+                <label for="course4">Course 4 - Android Development</label>
+                </article>
+                <br />
+                <br />
+                <button type="submit">Register</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
